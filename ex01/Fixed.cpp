@@ -8,13 +8,13 @@ Fixed::Fixed() : _value(0)
 Fixed::Fixed(int const n)
 {
 	std::cout << "Int constructor called" << std::endl;
-	_value = n * 256;
+	_value = n << _fractionalBits;
 }
 
 Fixed::Fixed(float const f)
 {
 	std::cout << "Float constructor called" << std::endl;
-	_value = roundf(f * 256);
+	_value = roundf(f * (1 << _fractionalBits));
 }
 
 Fixed::~Fixed()
@@ -38,7 +38,7 @@ Fixed& Fixed::operator=(const Fixed& b)
 
 float Fixed::toFloat() const
 {
-	return ((float)_value / 256);
+	return ((float)_value / (1 << _fractionalBits));
 }
 
 std::ostream& operator<<(std::ostream& o, const Fixed& fixed)
@@ -49,7 +49,7 @@ std::ostream& operator<<(std::ostream& o, const Fixed& fixed)
 
 int Fixed::toInt() const
 {
-	return (_value / 256);
+	return (_value >> _fractionalBits);
 }
 
 int Fixed::getRawBits(void) const
