@@ -23,7 +23,7 @@ OÙ EN SOMMES-NOUS ?
 
 ⭕ Exercice 00 : My First Class in Orthodox Canonical Form
 
-Status : À COMMENCER
+Status : ✅ TERMINÉ
 
 Objectif :
 Créer une classe Fixed représentant un nombre à virgule fixe
@@ -71,7 +71,7 @@ Concepts clés :
 
 ⭕ Exercice 01 : Towards a more useful fixed-point number class
 
-Status : À COMMENCER
+Status : ✅ TERMINÉ
 
 Objectif :
 Rendre la classe Fixed utile (pas juste 0.0)
@@ -127,7 +127,7 @@ Concepts clés :
 
 ⭕ Exercice 02 : Now we're talking
 
-Status : À COMMENCER
+Status : 🚀 EN COURS
 
 Objectif :
 Ajouter tous les opérateurs arithmétiques et de comparaison
